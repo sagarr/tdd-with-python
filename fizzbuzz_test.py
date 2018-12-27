@@ -1,10 +1,10 @@
 def fizzbuzz(n):
     if n % 3 == 0 and n % 5 == 0:
-        return 'fizzbuzz'
+        return "fizzbuzz"
     if n % 3 == 0:
-        return 'fizz'
+        return "fizz"
     if n % 5 == 0:
-        return 'buzz'
+        return "buzz"
     return n
 
 
@@ -23,26 +23,26 @@ def test_print_another_number():
 
 def test_print_fizz():
     res = fizzbuzz(3)
-    assert res == 'fizz'
+    assert res == "fizz"
 
     res = fizzbuzz(9)
-    assert res == 'fizz'
+    assert res == "fizz"
 
     res = fizzbuzz(24)
-    assert res == 'fizz'
+    assert res == "fizz"
 
 
 def test_print_buzz():
     res = fizzbuzz(5)
-    assert res == 'buzz'
+    assert res == "buzz"
 
     res = fizzbuzz(10)
-    assert res == 'buzz'
+    assert res == "buzz"
 
 
 def test_print_fizzbuzz():
     res = fizzbuzz(15)
-    assert res == 'fizzbuzz'
+    assert res == "fizzbuzz"
 
     res = fizzbuzz(30)
-    assert res == 'fizzbuzz'
+    assert res == "fizzbuzz"

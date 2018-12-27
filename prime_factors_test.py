@@ -25,13 +25,8 @@ def test_prime_factors():
     assert prime_factors(2 * 3 * 3 * 5 * 7 * 11 * 13) == [2, 3, 3, 5, 7, 11, 13]
 
 
-@pytest.mark.parametrize('n, factors', [
-    (1, []),
-    (2, [2]),
-    (3, [3]),
-    (4, [2, 2]),
-    (5, [5]),
-    (6, [2, 3])
-])
+@pytest.mark.parametrize(
+    "n, factors", [(1, []), (2, [2]), (3, [3]), (4, [2, 2]), (5, [5]), (6, [2, 3])]
+)
 def test_prime_factors_P(n, factors):
     assert prime_factors(n) == factors
